@@ -113,8 +113,11 @@ endif ()
 
 include_directories (${CMAKE_SOURCE_DIR})
 
+set(BOOST_CUSTOM ON)
 set(Boost_USE_STATIC_LIBS        ON)
 set(Boost_USE_MULTITHREADED      ON)
+
+set(BOOST_ROOT /home/melnaquib/work/client/freelancer.com/bb/local/boost)
 
 if (BOOST_ROOT)
     list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/Modules")

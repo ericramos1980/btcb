@@ -18,7 +18,7 @@ namespace
 char const * test_private_key_data = "34F0A37AAD20F4A260F0A5B3CB3D7FB50673212263E58A380BC10474BB039CE4";
 char const * test_public_key_data = "B0311EA55708D6A53C75CDBF88300259C6D018522FE3D4D0A242E431F9E8B6D0"; // xrb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpiij4txtdo
 char const * beta_public_key_data = "A59A47CC4F593E75AE9AD653FDA9358E2F7898D9ACC8C60E80D0495CE20FBA9F"; // xrb_3betaz86ypbygpqbookmzpnmd5jhh4efmd8arr9a3n4bdmj1zgnzad7xpmfp
-char const * live_public_key_data = "E89208DD038FBB269987689621D52292AE9C35941A7484756ECCED92A65093BA"; // xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3
+char const * live_public_key_data = "CB826525752B3E25F8354370D03F41BAC9379E273DAFE06F6CCF8EB38CA89485"; // xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3
 char const * test_genesis_data = R"%%%({
 	"type": "open",
 	"source": "B0311EA55708D6A53C75CDBF88300259C6D018522FE3D4D0A242E431F9E8B6D0",
@@ -37,13 +37,23 @@ char const * beta_genesis_data = R"%%%({
         "signature": "A726490E3325E4FA59C1C900D5B6EEBB15FE13D99F49D475B93F0AACC5635929A0614CF3892764A04D1C6732A0D716FFEB254D4154C6F544D11E6630F201450B"
 })%%%";
 
+//char const * live_genesis_data = R"%%%({
+//	"type": "open",
+//	"source": "E89208DD038FBB269987689621D52292AE9C35941A7484756ECCED92A65093BA",
+// "source": "F599B1C5C9FC9FD86D120B34516EB72E6923DD7974D55107CB7D104796E2994E",
+//	"representative": "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3",
+//	"account": "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3",
+//	"work": "62f05417dd3fb691",
+//	"signature": "9F0C933C8ADE004D808EA1985FA746A7E95BA2A38F867640F53EC8F180BDFE9E2C1268DEAD7C2664F356E37ABA362BC58E46DBA03E523A7B5A19E4B6EB12BB02"
+//})%%%";
+
 char const * live_genesis_data = R"%%%({
-	"type": "open",
-	"source": "E89208DD038FBB269987689621D52292AE9C35941A7484756ECCED92A65093BA",
-	"representative": "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3",
-	"account": "xrb_3t6k35gi95xu6tergt6p69ck76ogmitsa8mnijtpxm9fkcm736xtoncuohr3",
-	"work": "62f05417dd3fb691",
-	"signature": "9F0C933C8ADE004D808EA1985FA746A7E95BA2A38F867640F53EC8F180BDFE9E2C1268DEAD7C2664F356E37ABA362BC58E46DBA03E523A7B5A19E4B6EB12BB02"
+    "type": "open",
+    "source": "CB826525752B3E25F8354370D03F41BAC9379E273DAFE06F6CCF8EB38CA89485",
+    "representative": "xrb_3kw4enkqccsy6qw5ciuit1zn5gpb8yh4ghfhw3qpsmwgpg8cj767t49b3fja",
+    "account": "xrb_3kw4enkqccsy6qw5ciuit1zn5gpb8yh4ghfhw3qpsmwgpg8cj767t49b3fja",
+    "work": "5abf0e2864313b4c",
+    "signature": "12FA8EED10E565239DA26FCE9F2029C4B72BB51BF15A09C645A9540AAC1859385CE5E9D3EFE1BE40E2EDCF977EBC1CD62D026F36B4C29E8949FC6312537D4E01"
 })%%%";
 
 class ledger_constants

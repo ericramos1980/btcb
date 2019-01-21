@@ -320,8 +320,8 @@ public:
 	std::vector<boost::thread> packet_processing_threads;
 	nano::node & node;
 	bool on;
-	static uint16_t const node_port = nano::nano_network == nano::nano_networks::nano_live_network ? 7075 : 54000;
-	static size_t const buffer_size = 512;
+    static uint16_t node_port;
+    static size_t const buffer_size = 512;
 };
 
 class node_init

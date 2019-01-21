@@ -33,6 +33,8 @@ extern unsigned char nano_bootstrap_weights[];
 extern size_t nano_bootstrap_weights_size;
 }
 
+uint16_t nano::network::node_port = nano::nano_network == nano::nano_networks::nano_live_network ? 7075 : 54000;
+
 nano::network::network (nano::node & node_a, uint16_t port) :
 buffer_container (node_a.stats, nano::network::buffer_size, 4096), // 2Mb receive buffer
 socket (node_a.io_ctx, nano::endpoint (boost::asio::ip::address_v6::any (), port)),
