@@ -11,3 +11,6 @@
 [submodule "phc-winner-argon2"]
 	path = phc-winner-argon2
 	url = https://github.com/clemahieu/phc-winner-argon2.git
+[submodule "BcbWallet"]
+	path = BcbWallet
+	url = https://github.com/melnaquib/BcbWallet.git
