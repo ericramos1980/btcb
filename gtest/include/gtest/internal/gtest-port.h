@@ -485,7 +485,7 @@
 // true.
 # include <pthread.h>  // NOLINT
 
-// For timespec and nanosleep, used below.
+// For timespec and btcbsleep, used below.
 # include <time.h>  // NOLINT
 #endif
 
@@ -1190,7 +1190,7 @@ inline void SleepMilliseconds(int n) {
     0,                  // 0 seconds.
     n * 1000L * 1000L,  // And n ms.
   };
-  nanosleep(&time, NULL);
+  btcbsleep(&time, NULL);
 }
 
 // Allows a controller thread to pause execution of newly created

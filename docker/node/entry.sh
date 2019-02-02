@@ -6,7 +6,7 @@ export PATH
 set -euo pipefail
 IFS=$'\n\t'
 
-network="$(cat /etc/nano-network)"
+network="$(cat /etc/btcb-network)"
 case "${network}" in
         live|'')
                 network='live'
@@ -20,12 +20,12 @@ case "${network}" in
                 ;;
 esac
 
-nanodir="${HOME}/Nano${dirSuffix}"
-dbFile="${nanodir}/data.ldb"
-mkdir -p "${nanodir}"
-if [ ! -f "${nanodir}/config.json" ]; then
+btcbdir="${HOME}/Btcb${dirSuffix}"
+dbFile="${btcbdir}/data.ldb"
+mkdir -p "${btcbdir}"
+if [ ! -f "${btcbdir}/config.json" ]; then
         echo "Config File not found, adding default."
-        cp "/usr/share/nano/config/${network}.json" "${nanodir}/config.json"
+        cp "/usr/share/btcb/config/${network}.json" "${btcbdir}/config.json"
 fi
 
 pid=''
@@ -48,7 +48,7 @@ while true; do
 				fi
 			done
 
-			nano_node --vacuum
+			btcb_node --vacuum
 		fi
 	fi
 
@@ -59,7 +59,7 @@ while true; do
 	fi
 
 	if [ -z "${pid}" ]; then
-		nano_node --daemon &
+		btcb_node --daemon &
 		pid="$!"
 	fi
 done

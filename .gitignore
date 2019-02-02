@@ -30,8 +30,8 @@
 core_test
 !core_test/
 qt_test
-nano_node
-nano_wallet
+btcb_node
+btcb_wallet
 slow_test
 
 # IDEs
