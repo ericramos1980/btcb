@@ -13,4 +13,4 @@
 	url = https://github.com/clemahieu/phc-winner-argon2.git
 [submodule "btcbWallet"]
 	path = btcbWallet
-	url = https://github.com/melnaquib/btcbWallet.git
+	url = https://github.com/melnaquib/btcbWallet
