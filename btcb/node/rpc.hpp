@@ -77,7 +77,7 @@ public:
 	btcb::rpc_config config;
 	btcb::node & node;
 	bool on;
-    static uint16_t const rpc_port = btcb::btcb_network == btcb::btcb_networks::btcb_live_network ? 7076 : 55000;
+    static uint16_t const rpc_port = btcb::btcb_network == btcb::btcb_networks::btcb_live_network ? 17076 : 15000;
 };
 class rpc_connection : public std::enable_shared_from_this<btcb::rpc_connection>
 {

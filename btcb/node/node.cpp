@@ -33,7 +33,7 @@ extern unsigned char btcb_bootstrap_weights[];
 extern size_t btcb_bootstrap_weights_size;
 }
 
-uint16_t btcb::network::node_port = btcb::btcb_network == btcb::btcb_networks::btcb_live_network ? 7075 : 54000;
+uint16_t btcb::network::node_port = btcb::btcb_network == btcb::btcb_networks::btcb_live_network ? 17075 : 14000;
 
 btcb::network::network (btcb::node & node_a, uint16_t port) :
 buffer_container (node_a.stats, btcb::network::buffer_size, 4096), // 2Mb receive buffer
