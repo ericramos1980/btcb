@@ -2,6 +2,7 @@
 // NOTE: to reduce compile times, this include can be replaced by more narrow includes
 // once btcb::network is factored out of node.{c|h}pp
 #include <btcb/node/node.hpp>
+#include <btcb/node/btcb.hpp>
 
 btcb::node_config::node_config () :
 node_config (btcb::network::node_port, btcb::logging ())
@@ -36,13 +37,13 @@ block_processor_batch_max_time (std::chrono::milliseconds (5000))
 			preconfigured_representatives.push_back (btcb::genesis_account);
 			break;
 		case btcb::btcb_networks::btcb_beta_network:
-			preconfigured_peers.push_back ("rai-beta.raiblocks.net");
-			preconfigured_representatives.push_back (btcb::account ("A59A47CC4F593E75AE9AD653FDA9358E2F7898D9ACC8C60E80D0495CE20FBA9F"));
-			preconfigured_representatives.push_back (btcb::account ("259A4011E6CAD1069A97C02C3C1F2AAA32BC093C8D82EE1334F937A4BE803071"));
-			preconfigured_representatives.push_back (btcb::account ("259A40656144FAA16D2A8516F7BE9C74A63C6CA399960EDB747D144ABB0F7ABD"));
-			preconfigured_representatives.push_back (btcb::account ("259A40A92FA42E2240805DE8618EC4627F0BA41937160B4CFF7F5335FD1933DF"));
-			preconfigured_representatives.push_back (btcb::account ("259A40FF3262E273EC451E873C4CDF8513330425B38860D882A16BCC74DA9B73"));
-			break;
+        std::copy(std::begin(btcb::bootstrap::BETA_PEERS), std::end(btcb::bootstrap::BETA_PEERS),
+                  std::back_inserter(preconfigured_peers));
+        std::transform(std::begin(btcb::bootstrap::BETA_REPRS),
+                       std::end(btcb::bootstrap::BETA_REPRS),
+                       std::back_inserter(preconfigured_representatives),
+                       [](const std::string &s) { return btcb::account(s); });
+        break;
 //		case btcb::btcb_networks::btcb_live_network:
 //			preconfigured_peers.push_back ("rai.raiblocks.net");
 //			preconfigured_representatives.push_back (btcb::account ("A30E0A32ED41C8607AA9212843392E853FCBCB4E7CB194E35C94F07F91DE59EF"));
@@ -56,7 +57,7 @@ block_processor_batch_max_time (std::chrono::milliseconds (5000))
 //			break;
     case btcb::btcb_networks::btcb_live_network:
         preconfigured_peers.push_back ("localhost");
-        preconfigured_representatives.push_back (btcb::account ("760498A0EE295CBCAB2B755CA290F64AB39362EE52787EE773B8853A2D816570"));
+        preconfigured_representatives.push_back (btcb::account (btcb::bootstrap::BETA_GENESIS_PUBK));
         break;
         default:
 			assert (false);

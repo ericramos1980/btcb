@@ -17,6 +17,7 @@ endif ()
 add_library (node
 	${platform_sources}
 	${secure_rpc_sources}
+	btcb.hpp
 	bootstrap.cpp
 	bootstrap.hpp
 	cli.hpp
