@@ -55,11 +55,17 @@ block_processor_batch_max_time (std::chrono::milliseconds (5000))
 //			preconfigured_representatives.push_back (btcb::account ("2298FAB7C61058E77EA554CB93EDEEDA0692CBFCC540AB213B2836B29029E23A"));
 //			preconfigured_representatives.push_back (btcb::account ("3FE80B4BC842E82C1C18ABFEEC47EA989E63953BC82AC411F304D13833D52A56"));
 //			break;
+
     case btcb::btcb_networks::btcb_live_network:
-        preconfigured_peers.push_back ("localhost");
-        preconfigured_representatives.push_back (btcb::account (btcb::bootstrap::BETA_GENESIS_PUBK));
-        break;
-        default:
+    std::copy(std::begin(btcb::bootstrap::LIVE_PEERS), std::end(btcb::bootstrap::LIVE_PEERS),
+              std::back_inserter(preconfigured_peers));
+    std::transform(std::begin(btcb::bootstrap::LIVE_REPRS),
+                   std::end(btcb::bootstrap::LIVE_REPRS),
+                   std::back_inserter(preconfigured_representatives),
+                   [](const std::string &s) { return btcb::account(s); });
+    break;
+
+    default:
 			assert (false);
 			break;
 	}

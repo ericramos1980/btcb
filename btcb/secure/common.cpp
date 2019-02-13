@@ -19,7 +19,7 @@ namespace
 char const * test_private_key_data = "34F0A37AAD20F4A260F0A5B3CB3D7FB50673212263E58A380BC10474BB039CE4";
 char const * test_public_key_data = "B0311EA55708D6A53C75CDBF88300259C6D018522FE3D4D0A242E431F9E8B6D0"; // bcb_3e3j5tkog48pnny9dmfzj1r16pg8t1e76dz5tmac6iq689wyjfpiij4txtdo
 char const * beta_public_key_data = btcb::bootstrap::BETA_GENESIS_PUBK;
-char const * live_public_key_data = btcb::bootstrap::BETA_GENESIS_PUBK;
+char const * live_public_key_data = btcb::bootstrap::LIVE_GENESIS_PUBK;
 char const * test_genesis_data = R"%%%({
 	"type": "open",
 	"source": "B0311EA55708D6A53C75CDBF88300259C6D018522FE3D4D0A242E431F9E8B6D0",
@@ -31,14 +31,7 @@ char const * test_genesis_data = R"%%%({
 
 char const * beta_genesis_data = btcb::bootstrap::BETA_GENESIS_BLOCK;
 
-char const * live_genesis_data = R"%%%({
-    "type": "open",
-    "source": "760498A0EE295CBCAB2B755CA290F64AB39362EE52787EE773B8853A2D816570",
-    "representative": "bcb_1xi6m4igwccwqkokpxcwncahekomkfjgwnmrhumq9g679apr4sdiiwuoees6",
-    "account": "bcb_1xi6m4igwccwqkokpxcwncahekomkfjgwnmrhumq9g679apr4sdiiwuoees6",
-    "work": "f13f55d85e1cb689",
-    "signature": "DFDCD43AFEFAB6D88A8CBFC00FFB61DA132D53376D49F4C485118266C96D4CD2605BDD4FF97FF450E444ECED37A84827E99C83BDD8CD3A69351B2702699CDE0E"
-})%%%";
+char const * live_genesis_data = btcb::bootstrap::LIVE_GENESIS_BLOCK;
 
 class ledger_constants
 {
