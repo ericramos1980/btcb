@@ -6,15 +6,16 @@ namespace btcb {
 
 namespace bootstrap {
 
-static char const BETA_GENESIS_PUBK[] = "760498A0EE295CBCAB2B755CA290F64AB39362EE52787EE773B8853A2D816570";
-static char const BETA_GENESIS_ADDR[] = "bcb_1xi6m4igwccwqkokpxcwncahekomkfjgwnmrhumq9g679apr4sdiiwuoees6";
+//BETA
+static char const BETA_GENESIS_PUBK[] = "C118C71301B585FD8885C5D7E89B6ADABA4FFBEA84833B98983BBC29E14F0AFD";
+static char const BETA_GENESIS_ADDR[] = "xrb_3iarrwbi5fe7zp6adjgqx4fpopotbzxyo3659gebigxw79iny4qx8qz1i7zq";
 static char const BETA_GENESIS_BLOCK[] = R"%%%({
-"type": "open",
-"source": "760498A0EE295CBCAB2B755CA290F64AB39362EE52787EE773B8853A2D816570",
-"representative": "bcb_1xi6m4igwccwqkokpxcwncahekomkfjgwnmrhumq9g679apr4sdiiwuoees6",
-"account": "bcb_1xi6m4igwccwqkokpxcwncahekomkfjgwnmrhumq9g679apr4sdiiwuoees6",
-"work": "f13f55d85e1cb689",
-"signature": "DFDCD43AFEFAB6D88A8CBFC00FFB61DA132D53376D49F4C485118266C96D4CD2605BDD4FF97FF450E444ECED37A84827E99C83BDD8CD3A69351B2702699CDE0E"
+    "type": "open",
+    "source": "C118C71301B585FD8885C5D7E89B6ADABA4FFBEA84833B98983BBC29E14F0AFD",
+    "representative": "bcb_3iarrwbi5fe7zp6adjgqx4fpopotbzxyo3659gebigxw79iny4qx8qz1i7zq",
+    "account": "bcb_3iarrwbi5fe7zp6adjgqx4fpopotbzxyo3659gebigxw79iny4qx8qz1i7zq",
+    "work": "425e04d5179d7472",
+    "signature": "C9EA4571C8C8F1C3A4ABBAEE2730E9BED4BA0F37D149137115EE37D6D007655342ED78C87FD10DE1216E469225B2ED022F53543CF85AE91380808AB9CAEBCE0A"
 })%%%";
 
 static const std::array<const std::string, 1> BETA_REPRS = {BETA_GENESIS_PUBK};
@@ -23,7 +24,7 @@ static const std::array<const std::string, 4> BETA_PEERS = {"2406:da1a:305:2d01:
                                   "2600:1f16:aaa:ff02:74dc:ff20:bb59:2daa",
                                   "2a05:d01c:e0a:2801:8b79:f9db:ee8f:e673"};
 
-
+//LIVE
 static char const LIVE_GENESIS_PUBK[] = "843FB2D436CB6A64B7604D26AC37BCF888AD077DF44351E6EF820A8EA0F4C4D5";
 static char const LIVE_GENESIS_ADDR[] = "bcb_333zpdc5fkucekup1mb8oiuusy6aon5qux45c9mgz1icjtihbj8oichgif91";
 static char const LIVE_GENESIS_BLOCK[] = R"%%%({
