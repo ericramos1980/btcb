@@ -13,7 +13,7 @@
 BitcoinBlack is a community based currency focussed on a fair distribution and giving the power back to the people.
 Fee free & Instant transactions are made over a secure decentralized network with very low energy output.<br>
 The current version of Bitcoin Black is built upon a codebase fork of Nano.
-It is neither a hard fork or soft fork of Nano as it doesn't share the same chain.
+It is neither a hard fork or soft fork of Nano as it does not share the same chain.
 
 ---
 
