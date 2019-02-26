@@ -1815,7 +1815,7 @@ vote_uniquer (block_uniquer)
 		BOOST_LOG (log) << "Node ID: " << node_id.pub.to_account ();
 	}
 	peers.online_weight_minimum = config.online_weight_minimum.number ();
-    if (false && btcb::btcb_network == btcb::btcb_networks::btcb_live_network || btcb::btcb_network == btcb::btcb_networks::btcb_beta_network)
+    if (false && (btcb::btcb_network == btcb::btcb_networks::btcb_live_network || btcb::btcb_network == btcb::btcb_networks::btcb_beta_network))
 	{
 		btcb::bufferstream weight_stream ((const uint8_t *)btcb_bootstrap_weights, btcb_bootstrap_weights_size);
 		btcb::uint128_union block_height;
