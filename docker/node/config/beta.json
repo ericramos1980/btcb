@@ -2,22 +2,33 @@
     "version": "2",
     "rpc_enable": "true",
     "rpc": {
-        "address": "::ffff:0.0.0.0",
+        "address": "::1",
         "port": "15000",
         "enable_control": "true",
         "frontier_request_limit": "16384",
-        "chain_request_limit": "16384"
+        "chain_request_limit": "16384",
+        "max_json_depth": "20",
+        "secure": {
+            "enable": "false",
+            "verbose_logging": "true",
+            "server_cert_path": "/home/melnaquib/.config/Electron/tls/server.cert.pem",
+            "server_key_path": "/home/melnaquib/.config/Electron/tls/server.key.pem",
+            "server_key_passphrase": "",
+            "server_dh_path": "/home/melnaquib/.config/Electron/tls/dhparam.pem",
+            "client_certs_path": "/home/melnaquib/.config/Electron/tls/clients"
+        }
+
     },
     "node": {
-        "version": "12",
+        "version": "16",
         "peering_port": "14000",
         "bootstrap_fraction_numerator": "1",
-        "receive_minimum": "1000000000000000000000000",
+        "receive_minimum": "1000000000000000000",
         "logging": {
-            "version": "3",
+            "version": "5",
             "ledger": "false",
             "ledger_duplicate": "false",
-            "vote": "false",
+            "vote": "true",
             "network": "true",
             "network_message": "false",
             "network_publish": "false",
@@ -29,38 +40,45 @@
             "log_rpc": "true",
             "bulk_pull": "false",
             "work_generation_time": "true",
-            "log_to_cerr": "false",
+            "upnp_details": "false",
+            "timing": "false",
+            "log_to_cerr": "true",
             "max_size": "16777216",
             "rotation_size": "4194304",
-            "flush": "false"
+            "flush": "true"
         },
         "work_peers": "",
         "preconfigured_peers": [
-            "rai-beta.raiblocks.net"
+            "2400:6180:100:d0::903:b001",
+            "2400:6180:100:d0::903:c001",
+            "2400:6180:100:d0::8f7:4001",
+            "2400:6180:100:d0::8ff:7001",
+
+            "::ffff:159.65.152.110",
+            "::ffff:206.189.142.96",
+            "::ffff:139.59.66.31",
+            "::ffff:139.59.65.30"
         ],
         "preconfigured_representatives": [
-            "bcb_3betaz86ypbygpqbookmzpnmd5jhh4efmd8arr9a3n4bdmj1zgnzad7xpmfp",
-            "bcb_1beta1ayfkpj1tfbhi3e9ihkocjkqi6ms5e4bcbmbybqnkza1e5jrake8wai",
-            "bcb_1beta3kp4j9tn7pko3apyyzbcb789jpc98ep3ufqazanbcxiyyoxmxhjtbfn",
-            "bcb_1beta4nkzb3g6b1a1qhae89earmz3gk3kfrp3f8hyztm8qyjkeyz9kajfutq",
-            "bcb_1beta5zm6rq4ghp6c9n99j8fz3am8e44dewae5ea7addsjtfo8umsafmr1r7"
+            "bcb_3hhb18bqcandzueboeomyytqf6wgmxrt9twde3xbga79yhkozz88dr3qqhok"
         ],
-        "online_weight_minimum": "60000000000000000000000000000000000000",
-        "online_weight_quorum": "50",
+        "online_weight_minimum": "60000000000000000000000000000000000",
+        "online_weight_quorum": "5",
         "password_fanout": "1024",
         "io_threads": "4",
+        "network_threads": "4",
         "work_threads": "4",
         "enable_voting": "true",
-        "bootstrap_connections": "16",
+        "bootstrap_connections": "4",
         "bootstrap_connections_max": "64",
         "callback_address": "",
         "callback_port": "0",
         "callback_target": "",
         "lmdb_max_dbs": "128",
-        "state_block_parse_canary": "1F76506FE8606E8BBA8C732A32F6C8DA78E514182C8BED62D1D988F3159BEAA2",
-        "state_block_generate_canary": "1F76506FE8606E8BBA8C732A32F6C8DA78E514182C8BED62D1D988F3159BEAA2"
+        "block_processor_batch_max_time": "5000",
+        "allow_local_peers": "false"
     },
-    "opencl_enable": "false",
+    "opencl_enable": "true",
     "opencl": {
         "platform": "0",
         "device": "0",
