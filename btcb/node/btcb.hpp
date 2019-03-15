@@ -62,7 +62,17 @@ static char const LIVE_GENESIS_BLOCK[] = R"%%%({
 "signature": "A31E4C1167467F62DDD06C912139241245A2CC3C8A6832B4C232DE76F8CC5EB8EEB3E1F87DD82B3DB4CAC62FDC9B8E06C40D93E7F919301C080C63D101A71C0B"
 })%%%";
 
-static const std::array<const std::string, 1> LIVE_REPRS = {LIVE_GENESIS_PUBK};
+static const std::array<const std::string, 9> LIVE_REPRS = {
+    LIVE_GENESIS_PUBK,
+    "xrb_3zj11bh99obyehtr9cef3rxjy87psbg5xht8kpo9kxdinoxw7s3fqidqofwu",
+    "xrb_1ogwu5zqwyp7irteq34uk4ht8qxoks4tr8kn8fq6aittgi533sem9aukfxif",
+    "xrb_3b4hqx14n7kjr8nzh7cpqssgwhg7mma5orhqbwukwqwuow7ihfyi8xmz5zhc",
+    "xrb_1134anoxw3xn3mxd63rqdo35ce9g47rhm8rn1bzuak3dfrbo9yn344htqroh",
+    "xrb_34yaiodfrwpwmukzjadycgafb5dq9fjso8um6b438za7gmdiwjs8fhdjhenm",
+    "xrb_3iy9xzzci98edoswup6b79cy9d6nkhs5g4czj397izuknj6hu7atnu5i1j69",
+    "xrb_35ts8mzkx1ca1t781smecoqchyho8u8kir4o3r6qedumsirgmhuqn61x5d89",
+    "xrb_13431ny3r3qp4chyttrytttnu769yymceruw91cinsjw5zbe69byzr1skij6"
+    };
 static const std::array<const std::string, 16> LIVE_PEERS = {
     "::ffff:165.227.119.157",
     "2604:a880:800:a1::13bc:9001",
