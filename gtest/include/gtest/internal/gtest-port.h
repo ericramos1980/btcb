@@ -1190,7 +1190,7 @@ inline void SleepMilliseconds(int n) {
     0,                  // 0 seconds.
     n * 1000L * 1000L,  // And n ms.
   };
-  btcbsleep(&time, NULL);
+  nanosleep(&time, NULL);
 }
 
 // Allows a controller thread to pause execution of newly created

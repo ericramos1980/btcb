@@ -2,22 +2,33 @@
     "version": "2",
     "rpc_enable": "true",
     "rpc": {
-        "address": "::ffff:0.0.0.0",
+        "address": "::1",
         "port": "17076",
         "enable_control": "true",
         "frontier_request_limit": "16384",
-        "chain_request_limit": "16384"
+        "chain_request_limit": "16384",
+        "max_json_depth": "20",
+        "secure": {
+            "enable": "false",
+            "verbose_logging": "true",
+            "server_cert_path": "/home/melnaquib/.config/Electron/tls/server.cert.pem",
+            "server_key_path": "/home/melnaquib/.config/Electron/tls/server.key.pem",
+            "server_key_passphrase": "",
+            "server_dh_path": "/home/melnaquib/.config/Electron/tls/dhparam.pem",
+            "client_certs_path": "/home/melnaquib/.config/Electron/tls/clients"
+        }
+
     },
     "node": {
-        "version": "12",
+        "version": "16",
         "peering_port": "17075",
         "bootstrap_fraction_numerator": "1",
-        "receive_minimum": "1000000000000000000000000",
+        "receive_minimum": "1000000000000000000",
         "logging": {
-            "version": "3",
+            "version": "5",
             "ledger": "false",
             "ledger_duplicate": "false",
-            "vote": "false",
+            "vote": "true",
             "network": "true",
             "network_message": "false",
             "network_publish": "false",
@@ -29,41 +40,59 @@
             "log_rpc": "true",
             "bulk_pull": "false",
             "work_generation_time": "true",
-            "log_to_cerr": "false",
+            "upnp_details": "false",
+            "timing": "false",
+            "log_to_cerr": "true",
             "max_size": "16777216",
             "rotation_size": "4194304",
-            "flush": "false"
+            "flush": "true"
         },
         "work_peers": "",
         "preconfigured_peers": [
-            "rai.raiblocks.net"
+            "::ffff:165.227.119.157",
+            "2604:a880:800:a1::13bc:9001",
+
+            "::ffff:157.230.100.165",
+            "2a03:b0c0:3:e0::1fc:4001",
+
+            "::ffff:188.166.26.165",
+            "2a03:b0c0:2:d0::c48:9001",
+
+            "::ffff:159.65.75.19",
+            "2604:a880:2:d0::2247:e001",
+
+            "::ffff:139.59.61.182",
+            "2400:6180:100:d0::56:c001",
+
+            "::ffff:104.248.156.8",
+            "2400:6180:0:d1::447:9001",
+
+            "::ffff:159.89.114.42",
+            "2604:a880:cad:d0::bc5:4001",
+
+            "::ffff:178.62.119.213",
+            "2a03:b0c0:1:d0::c:6001"
         ],
         "preconfigured_representatives": [
-            "bcb_3arg3asgtigae3xckabaaewkx3bzsh7nwz7jkmjos79ihyaxwphhm6qgjps4",
-            "bcb_1stofnrxuz3cai7ze75o174bpm7scwj9jn3nxsn8ntzg784jf1gzn1jjdkou",
-            "bcb_1q3hqecaw15cjt7thbtxu3pbzr1eihtzzpzxguoc37bj1wc5ffoh7w74gi6p",
-            "bcb_3dmtrrws3pocycmbqwawk6xs7446qxa36fcncush4s1pejk16ksbmakis78m",
-            "bcb_3hd4ezdgsp15iemx7h81in7xz5tpxi43b6b41zn3qmwiuypankocw3awes5k",
-            "bcb_1awsn43we17c1oshdru4azeqjz9wii41dy8npubm4rg11so7dx3jtqgoeahy",
-            "bcb_1anrzcuwe64rwxzcco8dkhpyxpi8kd7zsjc1oeimpc3ppca4mrjtwnqposrs",
-            "bcb_1hza3f7wiiqa7ig3jczyxj5yo86yegcmqk3criaz838j91sxcckpfhbhhra1"
+            "bcb_3hhb18bqcandzueboeomyytqf6wgmxrt9twde3xbga79yhkozz88dr3qqhok"
         ],
-        "online_weight_minimum": "60000000000000000000000000000000000000",
-        "online_weight_quorum": "50",
+        "online_weight_minimum": "60000000000000000000000000000000000",
+        "online_weight_quorum": "5",
         "password_fanout": "1024",
         "io_threads": "4",
+        "network_threads": "4",
         "work_threads": "4",
         "enable_voting": "true",
-        "bootstrap_connections": "16",
+        "bootstrap_connections": "4",
         "bootstrap_connections_max": "64",
         "callback_address": "",
         "callback_port": "0",
         "callback_target": "",
         "lmdb_max_dbs": "128",
-        "state_block_parse_canary": "991CF190094C00F0B68E2E5F75F6BEE95A2E0BD93CEAA4A6734DB9F19B728948",
-        "state_block_generate_canary": "991CF190094C00F0B68E2E5F75F6BEE95A2E0BD93CEAA4A6734DB9F19B728948"
+        "block_processor_batch_max_time": "5000",
+        "allow_local_peers": "false"
     },
-    "opencl_enable": "false",
+    "opencl_enable": "true",
     "opencl": {
         "platform": "0",
         "device": "0",
