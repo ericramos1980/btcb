@@ -68,7 +68,15 @@
             "2400:6180:100:d0::903:c001"
         ],
         "preconfigured_representatives": [
-            "bcb_3hhb18bqcandzueboeomyytqf6wgmxrt9twde3xbga79yhkozz88dr3qqhok"
+            "bcb_3iarrwbi5fe7zp6adjgqx4fpopotbzxyo3659gebigxw79iny4qx8qz1i7zq",
+            "bcb_3djb63zf4d7wexwthhroiahdyqincqymf896yks9kooh4o18iitbnguwmjzo",
+            "bcb_11iqjc3h6we5emdbynf9mkxgxwx5skrqc1fcg4hehji6ib93nq6agwuudmm6",
+            "bcb_1fqby8riam57frgpquoiur5363ufkgoddym7o74ff7u1zbrmtdgms6eoaxqk",
+            "bcb_1peqzid67xyhronqheueoookpyqqg4c61eyxr8sdg8fqkk7iot1oiobf6pgg",
+            "bcb_1mscbbq9qhamt1joz1g33wtffgqbdm9ce6g4w1iw9fo3w3cubuue1h4fi663",
+            "bcb_1gu3i19ca83y53fatwb9xcnneei85pryi7tdni9emg1strk6s7oyhnasgj95",
+            "bcb_1pk4qqykag14chpd89f83ykm55j5dkei8qr7z3j6ur3b6f83tymf4xh45e1y",
+            "bcb_1qadj4837q3k7etgrxpgeezcgdr639xh1k3ygpj9fnj991xdtmz8gxsgszka"
         ],
         "online_weight_minimum": "60000000000000000000000000000000000",
         "online_weight_quorum": "5",

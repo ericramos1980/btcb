@@ -74,15 +74,15 @@
             "2a03:b0c0:1:d0::c:6001"
         ],
         "preconfigured_representatives": [
-            "843FB2D436CB6A64B7604D26AC37BCF888AD077DF44351E6EF820A8EA0F4C4D5",
-            "xrb_3zj11bh99obyehtr9cef3rxjy87psbg5xht8kpo9kxdinoxw7s3fqidqofwu",
-            "xrb_1ogwu5zqwyp7irteq34uk4ht8qxoks4tr8kn8fq6aittgi533sem9aukfxif",
-            "xrb_3b4hqx14n7kjr8nzh7cpqssgwhg7mma5orhqbwukwqwuow7ihfyi8xmz5zhc",
-            "xrb_1134anoxw3xn3mxd63rqdo35ce9g47rhm8rn1bzuak3dfrbo9yn344htqroh",
-            "xrb_34yaiodfrwpwmukzjadycgafb5dq9fjso8um6b438za7gmdiwjs8fhdjhenm",
-            "xrb_3iy9xzzci98edoswup6b79cy9d6nkhs5g4czj397izuknj6hu7atnu5i1j69",
-            "xrb_35ts8mzkx1ca1t781smecoqchyho8u8kir4o3r6qedumsirgmhuqn61x5d89",
-            "xrb_13431ny3r3qp4chyttrytttnu769yymceruw91cinsjw5zbe69byzr1skij6"
+            "bcb_333zpdc5fkucekup1mb8oiuusy6aon5qux45c9mgz1icjtihbj8oichgif91",
+            "bcb_3zj11bh99obyehtr9cef3rxjy87psbg5xht8kpo9kxdinoxw7s3fqidqofwu",
+            "bcb_1ogwu5zqwyp7irteq34uk4ht8qxoks4tr8kn8fq6aittgi533sem9aukfxif",
+            "bcb_3b4hqx14n7kjr8nzh7cpqssgwhg7mma5orhqbwukwqwuow7ihfyi8xmz5zhc",
+            "bcb_1134anoxw3xn3mxd63rqdo35ce9g47rhm8rn1bzuak3dfrbo9yn344htqroh",
+            "bcb_34yaiodfrwpwmukzjadycgafb5dq9fjso8um6b438za7gmdiwjs8fhdjhenm",
+            "bcb_3iy9xzzci98edoswup6b79cy9d6nkhs5g4czj397izuknj6hu7atnu5i1j69",
+            "bcb_35ts8mzkx1ca1t781smecoqchyho8u8kir4o3r6qedumsirgmhuqn61x5d89",
+            "bcb_13431ny3r3qp4chyttrytttnu769yymceruw91cinsjw5zbe69byzr1skij6"
         ],
         "online_weight_minimum": "60000000000000000000000000000000000",
         "online_weight_quorum": "5",

@@ -8,7 +8,7 @@ namespace bootstrap {
 
 //BETA
 static char const BETA_GENESIS_PUBK[] = "C118C71301B585FD8885C5D7E89B6ADABA4FFBEA84833B98983BBC29E14F0AFD";
-static char const BETA_GENESIS_ADDR[] = "xrb_3iarrwbi5fe7zp6adjgqx4fpopotbzxyo3659gebigxw79iny4qx8qz1i7zq";
+static char const BETA_GENESIS_ADDR[] = "bcb_3iarrwbi5fe7zp6adjgqx4fpopotbzxyo3659gebigxw79iny4qx8qz1i7zq";
 static char const BETA_GENESIS_BLOCK[] = R"%%%({
     "type": "open",
     "source": "C118C71301B585FD8885C5D7E89B6ADABA4FFBEA84833B98983BBC29E14F0AFD",
@@ -20,14 +20,14 @@ static char const BETA_GENESIS_BLOCK[] = R"%%%({
 
 static const std::array<const std::string, 9> BETA_REPRS = {
     BETA_GENESIS_PUBK,
-    "bcb_3djb63zf4d7wexwthhroiahdyqincqymf896yks9kooh4o18iitbnguwmjzo",
-    "bcb_11iqjc3h6we5emdbynf9mkxgxwx5skrqc1fcg4hehji6ib93nq6agwuudmm6",
-    "bcb_1fqby8riam57frgpquoiur5363ufkgoddym7o74ff7u1zbrmtdgms6eoaxqk",
-    "bcb_1peqzid67xyhronqheueoookpyqqg4c61eyxr8sdg8fqkk7iot1oiobf6pgg",
-    "bcb_1mscbbq9qhamt1joz1g33wtffgqbdm9ce6g4w1iw9fo3w3cubuue1h4fi663",
-    "bcb_1gu3i19ca83y53fatwb9xcnneei85pryi7tdni9emg1strk6s7oyhnasgj95",
-    "bcb_1pk4qqykag14chpd89f83ykm55j5dkei8qr7z3j6ur3b6f83tymf4xh45e1y",
-    "bcb_1qadj4837q3k7etgrxpgeezcgdr639xh1k3ygpj9fnj991xdtmz8gxsgszka"
+    "AE29207ED12CBC6779A7BF15821EBF5E1455FD3698E4F4B27956AF1540684349",
+    "02178A82F2718364D69F51A79CBAEEF3A3CCB17501AA709EC7C604824E1A5C88",
+    "36E9F1B1044C656E1D6BEEB0DE0612076D93AAB5FA65A944D69760FA713D2DD3",
+    "5997FC1642F7CFC56977B36CAD6B2B7AF770944033DDC1B2B719B7948B0AE815",
+    "4F2A4A6E7BBD13D0235F81C10F34D6BAE95CCEA611C2E021C3B6A1E055B4EF6C",
+    "3B61800EA4183E185A8D7127EAA94632061DB1E8174BA40EC9B819D6244C96BE",
+    "5A42BDFD24380253ECB31DA60FA5318E235C99035F05F8624DE029234C1D7A6D",
+    "5D0B888C12DC322B34EC76CE633EA72F0409FAF0483E75A276D227383ABD4FE6"
 };
 static const std::array<const std::string, 12> BETA_PEERS = {
     "::ffff:45.55.57.81",
@@ -64,14 +64,14 @@ static char const LIVE_GENESIS_BLOCK[] = R"%%%({
 
 static const std::array<const std::string, 9> LIVE_REPRS = {
     LIVE_GENESIS_PUBK,
-    "xrb_3zj11bh99obyehtr9cef3rxjy87psbg5xht8kpo9kxdinoxw7s3fqidqofwu",
-    "xrb_1ogwu5zqwyp7irteq34uk4ht8qxoks4tr8kn8fq6aittgi533sem9aukfxif",
-    "xrb_3b4hqx14n7kjr8nzh7cpqssgwhg7mma5orhqbwukwqwuow7ihfyi8xmz5zhc",
-    "xrb_1134anoxw3xn3mxd63rqdo35ce9g47rhm8rn1bzuak3dfrbo9yn344htqroh",
-    "xrb_34yaiodfrwpwmukzjadycgafb5dq9fjso8um6b438za7gmdiwjs8fhdjhenm",
-    "xrb_3iy9xzzci98edoswup6b79cy9d6nkhs5g4czj397izuknj6hu7atnu5i1j69",
-    "xrb_35ts8mzkx1ca1t781smecoqchyho8u8kir4o3r6qedumsirgmhuqn61x5d89",
-    "xrb_13431ny3r3qp4chyttrytttnu769yymceruw91cinsjw5zbe69byzr1skij6"
+    "FE20025E73D53E63F583A98D0E3B1F18B6CA5C3EBF4695AA797570A57BC2E42D",
+    "55DCD8FF7E7AC58634CB845B909FA35FB59645AC1A54336E44435A740610E593",
+    "A44FBF402A1651C1A9F79556BE72EE3DC59CD03AE1F74F372E5F9BAF0B07B7D0",
+    "0022452BDE07B40CFAB207175D423530EE1170F99B14027FB4482B6E1353FA81",
+    "8BC88556DC72DC9EE5F8A17E5390D48D773B639A9B732244137D0574D70E4726",
+    "C3C7EFFEA81CCC5D73CDD88929D5E3AC9493F237095F884E587F72A448FD951A",
+    "8F5934FF2E8148068A60666C556EA7F9F536CD2860550E09762F73CC30E9BF77",
+    "0441053C1C06F6129FED6B1ED6B54D9487F7A6A6637C38150A663C1FD2C21D3E"
     };
 static const std::array<const std::string, 16> LIVE_PEERS = {
     "::ffff:165.227.119.157",
